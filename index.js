@@ -85,7 +85,7 @@ function kyun(seconds){
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
 
-  return `${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik`
+  return `${pad(hours)} hora ${pad(minutes)} minuto ${pad(seconds)} segundo`
 }
 
 
@@ -394,7 +394,7 @@ async function starts() {
 					client.sendMessage(from, ben.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": ban}})
 					break 
 				case 'premiumlist':
-				prem = '```╭────「 *USUARIOS PREMIUM* 👑 」──``` :\n'
+				prem = '```╭─「 *USUARIOS PREMIUM* 👑 」──``` :\n'
 					for (let userprem of userpremium) {
 						prem += `~> @${userprem.split('@')[0]}\n`
 					}
@@ -2841,7 +2841,7 @@ case 'asupan':
 			break
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
-                  reply(`Desculpe, Comando *${prefix}${command}*nao encontrado*`)
+                  reply(`Desculpe, Comando *${prefix}${command}* nao encontrado*`)
                   }
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
