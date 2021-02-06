@@ -1703,15 +1703,6 @@ async function starts() {
 			        client.sendMessage(from, mimpi, text, {quoted: mek})
 			        await limitAdd(sender) 
 			       	break 
-				case 'quotes':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-					anu = await fetchJson(`https://api.arugaz.my.id/api/random/text/quotes`, {method: 'get'})
-					quotes = `Quotes Dari: *${anu.result.by}*\n\n\n*${anu.result.quote}*`
-					client.sendMessage(from, quotes, text, {quoted: mek})
-					await limitAdd(sender) 
-					break 
 				case 'fakta':
 				if (isBanned) return reply(mess.only.benned)   
 				 if (isLimit(sender)) return reply(limitend(pushname2))
