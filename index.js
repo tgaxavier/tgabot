@@ -2315,24 +2315,24 @@ async function starts() {
 					prefix = args[0]
 					reply(`Prefix berhasil di ubah menjadi : ${prefix}`)
 					break 
-				case 'setmemlimit':
+				case 'limit':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					limitt = args[0]
-					reply(`Limit berhasil di ubah menjadi : ${limitt}`)
+					reply(`O limite foi alterado com sucesso para : ${limitt}`)
 					break 
 				case 'setnamebot':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					name = body.slice(12)
-					reply(`Nama Bot berhasil di ubah menjadi : ${name}`)
+					reply(`O nome do bot foi alterado com sucesso para : ${name}`)
 					break 
 				case 'setreply':
 					if (!isOwner) return reply(mess.only.ownerB)
                     client.updatePresence(from, Presence.composing) 
 					if (args.length < 1) return
 					rmenu = body.slice(10)
-					reply(`reply berhasil di ubah menjadi : ${rmenu}`)
+					reply(`a resposta foi alterada com sucesso para : ${rmenu}`)
 				break 
 ////////////
 				case 'wait':
