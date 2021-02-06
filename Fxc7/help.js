@@ -1,38 +1,20 @@
 // menu fitur bot
-const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
+const help = (prefix, pushname2, limitt, uptime, jam, tanggal) => { 
 	return `
 	
-\`\`\`Follow My Instagram\`\`\`
-${instagram}
 
-\`\`\`SUBSCRIBE😁\`\`\`
-${yt}
-
-\`\`\`GROUP OFFICIAL\`\`\`
-https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
-
-
-\`\`\`HARAP BACA NOTE DIBAWAH SEBELUM\`\`\`
-\`\`\`MENGGUNAKAN BOT\`\`\`
-
-╭──────「 *REGULATION ${name}* 」
+╭──────「 *MENU* 」
 ┴
 ┣⊱  \`\`\`NAMA USER:\`\`\` *${pushname2}*
 ┣⊱  \`\`\`VERIVICATION:\`\`\` ✅
-┣⊱  \`\`\`LIMIT:\`\`\` *${limitt} perhari*
-┣⊱  \`\`\`AKTIF:\`\`\` ${kyun(uptime)}
-┣⊱  \`\`\`JAM:\`\`\` *${jam} WIB*
-┣⊱  \`\`\`TANGGAL:\`\`\` *${tanggal}*
-┣⊱  \`\`\`VERSION:\`\`\` *6.5.0*
-┣⊱  \`\`\`USER TERDAFTAR:\`\`\` *${user.length} User*
-┣⊱  ❌ *SPAM*
-┣⊱  ❌ *CALL & VC*
-┣⊱  \`\`\`Melanggar??\`\`\` *Banned + Out Group*
+┣⊱  \`\`\`LIMIT:\`\`\` *${limitt} Por Dia*
+┣⊱  \`\`\`HORA:\`\`\` *${jam}*
+┣⊱  \`\`\`DATA:\`\`\` *${tanggal}*
 ┬
 ╰────────────────────────
 
 
-╭──────「 *ABOUT ${name}* 」
+╭──────「 *ABOUT* 」
 ┴
 │➻ *${prefix}report lapor bug*
 │➻ *${prefix}info*
@@ -335,16 +317,6 @@ function kyun(seconds){
   return `*${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik*`
 }
 
-// donasi menu
-const donasi = (name) => { 
-	return `       
-╭─────「 *DONASI SEIKHLASNYA* 」
-┴
-│√ *PULSA: 08311800241*
-│√ *OVO : 08311800241*
-┬
-╰──────「 *BY ${name}* 」
-
 `
 }
 exports.donasi = donasi
@@ -411,7 +383,7 @@ exports.bahasa = bahasa
 
 // Limit
 const limitend = (pushname2) => {
-        return`*maaf ${pushname2} limit hari ini habis*\n*limit di reset setiap jam 12:00 WIB TENGAH MALAM*`
+        return`*Desculpe ${pushname2} seu limite acabou*\n*o limite é redefinido a cada 12:00*`
 }
 
 const limitcount = (limitCounts) => {
