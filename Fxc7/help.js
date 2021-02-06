@@ -5,9 +5,9 @@ const help = (prefix, pushname2, limitt, uptime, jam, tanggal) => {
 
 ╭──────「 *MENU* 」
 ┴
-┣⊱  \`\`\`NAMA USER:\`\`\` *${pushname2}*
-┣⊱  \`\`\`VERIVICATION:\`\`\` ✅
-┣⊱  \`\`\`LIMIT:\`\`\` *${limitt} Por Dia*
+┣⊱  \`\`\`NOME:\`\`\` *${pushname2}*
+┣⊱  \`\`\`VERIFICADO:\`\`\` ✅
+┣⊱  \`\`\`LIMITE:\`\`\` *${limitt} Por Dia*
 ┣⊱  \`\`\`HORA:\`\`\` *${jam}*
 ┣⊱  \`\`\`DATA:\`\`\` *${tanggal}*
 ┬
@@ -227,24 +227,6 @@ const help = (prefix, pushname2, limitt, uptime, jam, tanggal) => {
 ┬
 ╰────────────────────────
 
-╭──────「 *OTHERS FUN & GAME* 」
-┴
-│➻ *${prefix}becrypt string*
-│➻ *${prefix}encode64 string*
-│➻ *${prefix}decode64 encrypt*
-│➻ *${prefix}encode32 string*
-│➻ *${prefix}decode32 encrypt*
-│➻ *${prefix}encbinary string*
-│➻ *${prefix}decbinary encrypt*
-│➻ *${prefix}encoctal string*
-│➻ *${prefix}decoctal encrypt*
-│➻ *${prefix}hashidentifier Encrypt Hash*
-│➻ *${prefix}dorking dork*
-│➻ *${prefix}pastebin teks*
-│➻ *${prefix}tinyurl link*
-│➻ *${prefix}bitly link*
-┬
-╰────────────────────────
 
 ╭──────「 *OTHERS FUN & GAME* 」
 ┴
@@ -291,17 +273,6 @@ const help = (prefix, pushname2, limitt, uptime, jam, tanggal) => {
 ┬
 ╰────────────────────────
 
-
-╭─────「 *SUPPORT* 」
-┴
-│➲ *O BOT*
-│➲ *M. HADI FIRMANSYA*
-│➲ *DELIA AULIA*
-│➲ *KEVIN DAVID*
-│➲ *MY TEAM FXC7 BOT*
-│➲ *CONTENT CREATOR BOT WHATSAPP*
-┬
-╰────────────────────────`
 }
 
 exports.help = help
