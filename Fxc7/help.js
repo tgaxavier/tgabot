@@ -1,5 +1,5 @@
 // menu fitur bot
-const help = (prefix, pushname2, limitt, uptime, jam, tanggal) => { 
+const help = (prefix, pushname2, limitt, jam, tanggal) => { 
 	return `
 	
 
@@ -8,8 +8,8 @@ const help = (prefix, pushname2, limitt, uptime, jam, tanggal) => {
 ┣⊱  \`\`\`NOME:\`\`\` *${pushname2}*
 ┣⊱  \`\`\`VERIFICADO:\`\`\` ✅
 ┣⊱  \`\`\`LIMITE:\`\`\` *${limitt} Por Dia*
-┣⊱  \`\`\`HORA:\`\`\` *${jam}*
-┣⊱  \`\`\`DATA:\`\`\` *${tanggal}*
+┣⊱  \`\`\`JAM:\`\`\` *${jam}*
+┣⊱  \`\`\`TANGGAL:\`\`\` *${tanggal}*
 ┬
 ╰────────────────────────
 
@@ -227,6 +227,24 @@ const help = (prefix, pushname2, limitt, uptime, jam, tanggal) => {
 ┬
 ╰────────────────────────
 
+╭──────「 *OTHERS FUN & GAME* 」
+┴
+│➻ *${prefix}becrypt string*
+│➻ *${prefix}encode64 string*
+│➻ *${prefix}decode64 encrypt*
+│➻ *${prefix}encode32 string*
+│➻ *${prefix}decode32 encrypt*
+│➻ *${prefix}encbinary string*
+│➻ *${prefix}decbinary encrypt*
+│➻ *${prefix}encoctal string*
+│➻ *${prefix}decoctal encrypt*
+│➻ *${prefix}hashidentifier Encrypt Hash*
+│➻ *${prefix}dorking dork*
+│➻ *${prefix}pastebin teks*
+│➻ *${prefix}tinyurl link*
+│➻ *${prefix}bitly link*
+┬
+╰────────────────────────
 
 ╭──────「 *OTHERS FUN & GAME* 」
 ┴
@@ -273,6 +291,7 @@ const help = (prefix, pushname2, limitt, uptime, jam, tanggal) => {
 ┬
 ╰────────────────────────
 
+`
 }
 
 exports.help = help
@@ -285,8 +304,73 @@ function kyun(seconds){
   var hours = Math.floor(seconds / (60*60));
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
-, 
 
+}
+
+
+`
+}
+exports.donasi = donasi
+
+// bahasa list
+const bahasa = (prefix) => {
+return `
+List Bahasa Untuk Command *${prefix}tts*
+
+  af: Afrikaans
+  sq: Albanian
+  ar: Arabic
+  hy: Armenian
+  ca: Catalan
+  zh: Chinese
+  zh-cn: Chinese (Mandarin/China)
+  zh-tw: Chinese (Mandarin/Taiwan)
+  zh-yue: Chinese (Cantonese)
+  hr: Croatian
+  cs: Czech
+  da: Danish
+  nl: Dutch
+  en: English
+  en-au: English (Australia)
+  en-uk: English (United Kingdom)
+  en-us: English (United States)
+  eo: Esperanto
+  fi: Finnish
+  fr: French
+  de: German
+  el: Greek
+  ht: Haitian Creole
+  hi: Hindi
+  hu: Hungarian
+  is: Icelandic
+  id: Indonesian
+  it: Italian
+  ja: Japanese
+  ko: Korean
+  la: Latin
+  lv: Latvian
+  mk: Macedonian
+  no: Norwegian
+  pl: Polish
+  pt: Portuguese
+  pt-br: Portuguese (Brazil)
+  ro: Romanian
+  ru: Russian
+  sr: Serbian
+  sk: Slovak
+  es: Spanish
+  es-es: Spanish (Spain)
+  es-us: Spanish (United States)
+  sw: Swahili
+  sv: Swedish
+  ta: Tamil
+  th: Thai
+  tr: Turkish
+  vi: Vietnamese
+  cy: Welsh
+`
+}
+exports.bahasa = bahasa
 
 // Limit
 const limitend = (pushname2) => {
