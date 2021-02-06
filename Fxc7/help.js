@@ -9,7 +9,7 @@ const help = (prefix, pushname2, limitt, jam, tanggal) => {
 ┣⊱  \`\`\`VERIFICADO:\`\`\` ✅
 ┣⊱  \`\`\`LIMITE:\`\`\` *${limitt} Por Dia*
 ┣⊱  \`\`\`JAM:\`\`\` *${jam}*
-┣⊱  \`\`\`TANGGAL:\`\`\` *${tanggal}*
+┣⊱  \`\`\`HORA:\`\`\` *${tanggal}*
 ┬
 ╰────────────────────────
 
@@ -18,7 +18,6 @@ const help = (prefix, pushname2, limitt, jam, tanggal) => {
 ┴
 │➻ *${prefix}report lapor bug*
 │➻ *${prefix}info*
-│➻ *${prefix}donasi*
 │➻ *${prefix}owner*
 │➻ *${prefix}speed*
 │➻ *${prefix}daftar*
