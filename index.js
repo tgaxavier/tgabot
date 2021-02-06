@@ -215,7 +215,7 @@ async function starts() {
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isAnime = isGroup ? anime.includes(from) : false
-			const isSimi = isGroup ? samih.includes(from) 
+			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const antilink = isGroup ? anlink.includes(from) : false
 			const isUser = user.includes(sender)
