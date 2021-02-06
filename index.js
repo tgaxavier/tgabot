@@ -2808,7 +2808,7 @@ case 'asupan':
 						fs.writeFileSync('./database/json/bucin.json', JSON.stringify(bucinrandom))
 						reply(`Sucesso \n*${huu}*\n Adicionado ao banco de dados`)
 						break
-                    case 'bucin':
+                    case 'cantada':
                     case 'quotebucin':
                     if (isBanned) return reply(mess.only.benned)    
                     if (!isUser) return reply(mess.only.userB)
