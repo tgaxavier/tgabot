@@ -575,7 +575,7 @@ async function starts() {
 				    break 
 				case 'owner':
                  client.sendMessage(from, {displayname: "jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 client.sendMessage(from, 'Jika Mau Save Chat Aja Gan Ntar Disave Back:)',text, { quoted: mek} )
+                 client.sendMessage(from, 'Esse e o contato do meu dono:)',text, { quoted: mek} )
                  break
                  case 'fitnah':	
 				case 'fake':          
