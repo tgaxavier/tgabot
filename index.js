@@ -2873,7 +2873,7 @@ case 'asupan':
 			break
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
-                  reply(`Desculpe, Comando *${prefix}${command}* nao encontrado*`)
+                  reply(`Desculpe, Comando *${prefix}${command}* nao encontrado *`)
                   }
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
