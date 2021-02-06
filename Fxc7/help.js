@@ -3,7 +3,7 @@ const help = (prefix, pushname2, limitt, jam, tanggal) => {
 	return `
 	
 
-╭──────「 *MENU* 」
+╭──────「 *MEMBRO* 」
 ┴
 ┣⊱  \`\`\`NOME:\`\`\` *${pushname2}*
 ┣⊱  \`\`\`VERIFICADO:\`\`\` ✅
@@ -14,9 +14,9 @@ const help = (prefix, pushname2, limitt, jam, tanggal) => {
 ╰────────────────────────
 
 
-╭──────「 *ABOUT* 」
+╭──────「 *MENU* 」
 ┴
-│➻ *${prefix}report lapor bug*
+│➻ *${prefix}report msg pro admin*
 │➻ *${prefix}info*
 │➻ *${prefix}owner*
 │➻ *${prefix}speed*
@@ -31,45 +31,13 @@ const help = (prefix, pushname2, limitt, jam, tanggal) => {
 ╰────────────────────────
 
 
-͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOADER* 」
+╭──────「 *Xavier-Bot* 」
 ┴
-│➻ *${prefix}tiktokstalk username*
-│➻ *${prefix}igstalk _farhan_xcode7*
-│➻ *${prefix}instavid link valid*
-│➻ *${prefix}instaimg link valid*
-│➻ *${prefix}instastory username*
-│➻ *${prefix}ssweb url*
-│➻ *${prefix}url2img Url*
-│➻ *${prefix}tiktok*
-│➻ *${prefix}fototiktok*
-│➻ *${prefix}memeindo*
-│➻ *${prefix}kbbi*
-│➻ *${prefix}wait*
-│➻ *${prefix}trendtwit*
-│➻ *${prefix}google berita terkini*
-┬
-╰────────────────────────
-
-
-╭──────「 *CREATOR MENU* 」
-┴
-│➻ *${prefix}quotemaker tx/wtrmk/tema*
-│➻ *${prefix}nulis nama/kelas/text*
-│➻ *${prefix}nulis Fxc7/Bot*
-│
-│➻ *${prefix}tahta FXC7*
-│➻ *${prefix}croman FXC7 dan BOT*
-│➻ *${prefix}clove FXC7*
-│➻ *${prefix}cparty FXC7*
-│➻ *${prefix}csky FXC7*
-│➻ *${prefix}tts id Haii*
-│➻ *${prefix}ttp Fxc7 [ERROR]*
-│➻ *${prefix}cballon Fxc7*
-│➻ *${prefix}cpaper Fxc7*
-│➻ *${prefix}slide Fxc7 BOT WA*
-│
-│➻ *${prefix}stiker*
-│➻ *${prefix}gifstiker*
+│➻ *${prefix}nulis*
+│➻ *${prefix}tahta*
+│➻ *${prefix}tts*
+│➻ *${prefix}ttp*
+│➻ *${prefix}sticker*
 │➻ *${prefix}toimg*
 │➻ *${prefix}img2url*
 │➻ *${prefix}tomp3*
@@ -78,34 +46,13 @@ const help = (prefix, pushname2, limitt, jam, tanggal) => {
 ╰──────────────────────────
 
 
-╭───────「 *GROUP ONLY* 」
-┴
-│➻ *${prefix}modeanime On/Off*
-│➻ *${prefix}naruto*
-│➻ *${prefix}minato*
-│➻ *${prefix}boruto*
-│➻ *${prefix}hinata*
-│➻ *${prefix}sakura*
-│➻ *${prefix}sasuke*
-│➻ *${prefix}toukachan*
-│➻ *${prefix}rize*
-│➻ *${prefix}akira*
-│➻ *${prefix}itori*
-│➻ *${prefix}kurumi*
-│➻ *${prefix}miku*
-│➻ *${prefix}anime*
-│➻ *${prefix}animecry*
-│➻ *${prefix}neonime*
-│➻ *${prefix}animekiss*
-┬
-╰───────────────────────
-
-╭───────「 *GROUP ONLY* 」
+╭───────「 *GRUPO_MENU* 」
 ┴
 │➻ *${prefix}welcome On/Off*
-│➻ *${prefix}grup buka/tutup*
+│➻ *${prefix}grup open/close*
 │➻ *${prefix}antilink on/off*
 │➻ *${prefix}ownergrup*
+│➻ *${prefix}cantada*
 │➻ *${prefix}setpp*
 │➻ *${prefix}infogc*
 │➻ *${prefix}add 628xxxxxxxxxx*
@@ -118,138 +65,19 @@ const help = (prefix, pushname2, limitt, jam, tanggal) => {
 │➻ *${prefix}linkgrup*
 │➻ *${prefix}tagme*
 │➻ *${prefix}hidetag*
-│➻ *${prefix}tagall*
 │➻ *${prefix}mentionall*
 │➻ *${prefix}fitnah*
 │➻ *${prefix}listadmin*
-┬
-╰────────────────────────
-
-╭───────「 *GROUP ONLY* 」
-┴
-│➻ *${prefix}nsfw On/Off*
-│➻ *${prefix}nsfwloli*
-│➻ *${prefix}nsfwblowjob*
-│➻ *${prefix}nsfwneko*
-│➻ *${prefix}nsfwtrap*
-│➻ *${prefix}hentai*
 │➻ *${prefix}simih On/Off*
 ┬
 ╰────────────────────────
 
 
-╭──────「 *OTHERS FUN & GAME* 」
+╭──────「 *MENU_APPS* 」
 ┴
-│➻ *${prefix}anjing*
-│➻ *${prefix}kucing*
-│➻ *${prefix}testime*
-│➻ *${prefix}hilih*
-│➻ *${prefix}apakah*
-│➻ *${prefix}kapankah*
-│➻ *${prefix}bisakah*
-│➻ *${prefix}rate*
-│➻ *${prefix}watak*
-│➻ *${prefix}hobby*
-│➻ *${prefix}infogempa*
-│➻ *${prefix}infonomor*
-│➻ *${prefix}quotes*
-│➻ *${prefix}truth*
-│➻ *${prefix}dare*
-│➻ *${prefix}katabijak*
-│➻ *${prefix}fakta*
-│➻ *${prefix}darkjokes*
-│➻ *${prefix}bucin*
-│➻ *${prefix}pantun*
-│➻ *${prefix}katacinta*
-│➻ *${prefix}jadwaltvnow*
-│➻ *${prefix}hekerbucin*
-│➻ *${prefix}katailham*
-┬
-╰────────────────────────
-
-╭──────「 *OTHERS FUN & GAME* 」
-┴
-│➻ *${prefix}jarak Banyuwangi/Surabaya*
-│➻ *${prefix}translate en/Apa kabar?*
-│➻ *${prefix}pasangan Farhan/Iriene*
-│➻ *${prefix}gantengcek Farhan*
-│➻ *${prefix}cantikcek Iriene*
-│➻ *${prefix}artinama Farhan*
-│➻ *${prefix}persengay Topan*
-│➻ *${prefix}pbucin Farhan*
-│➻ *${prefix}bpfont Farhan*
-│➻ *${prefix}textstyle FXC7*
-│➻ *${prefix}jadwaltv antv*
-│➻ *${prefix}lirik melukis senja*
-│➻ *${prefix}chord Melukis senja*
-│➻ *${prefix}wiki Adolf Hitler*
-│➻ *${prefix}brainly pertanyaan*
-│➻ *${prefix}resepmasakan rawon*
-│➻ *${prefix}map Banyuwangi*
-│➻ *${prefix}film Fast and Farious*
-│➻ *${prefix}pinterest gambar kucing*
-│➻ *${prefix}infocuaca Banyuwangi*
-│➻ *${prefix}jamdunia Banyuwangi*
-│➻ *${prefix}mimpi Ular*
-│➻ *${prefix}infoalamat jalan Banyuwangi*
-│➻ *${prefix}playstore WhatsApp*
-┬
-╰───────────────────────────
-
-
-╭──────「 *OTHERS FUN & GAME* 」
-┴
-│➻ *${prefix}asupan*
-│➻ *${prefix}tebakgambar*
-│➻ *${prefix}caklontong*
-│➻ *${prefix}family100*
-│➻ *${prefix}kalkulator 13*12*
 │➻ *${prefix}moddroid lightroom*
 │➻ *${prefix}happymod lightroom*
-┬
-╰────────────────────────
-
-╭──────「 *OTHERS FUN & GAME* 」
-┴
-│➻ *${prefix}cerpen*
-│➻ *${prefix}cersex*
-│➻ *${prefix}randombokep*
-│➻ *${prefix}pornhub stepMoms*
-┬
-╰────────────────────────
-
-╭──────「 *OTHERS FUN & GAME* 」
-┴
-│➻ *${prefix}jadwalsholat Banyuwangi*
-│➻ *${prefix}quran*
-│➻ *${prefix}quransurah 1*
-┬
-╰────────────────────────
-
-╭──────「 *OTHERS FUN & GAME* 」
-┴
-│➻ *${prefix}becrypt string*
-│➻ *${prefix}encode64 string*
-│➻ *${prefix}decode64 encrypt*
-│➻ *${prefix}encode32 string*
-│➻ *${prefix}decode32 encrypt*
-│➻ *${prefix}encbinary string*
-│➻ *${prefix}decbinary encrypt*
-│➻ *${prefix}encoctal string*
-│➻ *${prefix}decoctal encrypt*
-│➻ *${prefix}hashidentifier Encrypt Hash*
-│➻ *${prefix}dorking dork*
-│➻ *${prefix}pastebin teks*
-│➻ *${prefix}tinyurl link*
-│➻ *${prefix}bitly link*
-┬
-╰────────────────────────
-
-╭──────「 *OTHERS FUN & GAME* 」
-┴
-│➻ *${prefix}spamcall 083xxxxxxxxx*
-│➻ *${prefix}spamsms 083xxxxxxxx/jumlah*
-│➻ *${prefix}spamgmail contoh@gmail.com*
+│➻ *${prefix}playstore WhatsApp*
 ┬
 ╰────────────────────────
 
@@ -278,15 +106,15 @@ const help = (prefix, pushname2, limitt, jam, tanggal) => {
 ╰────────────────────────
 
 
-╭────────「 *PREMIUM ONLY* 」
+╭────────「 *MENU_PREMIUM* 」
 ┴
-│➻ *${prefix}playmp3 menepi*
+│➻ *${prefix}playmp3*
 │➻ *${prefix}fb link video*
 │➻ *${prefix}snack link snack video*
-│➻ *${prefix}ytmp3 link yt [ERROR]*
-│➻ *${prefix}ytmp4 link yt [ERROR]*
-│➻ *${prefix}joox Monolog Pamungkas*
-│➻ *${prefix}smule Link Video Smule*
+│➻ *${prefix}ytmp3 link*
+│➻ *${prefix}ytmp4 link*
+│➻ *${prefix}play*
+│➻ *${prefix}smule*
 ┬
 ╰────────────────────────
 
@@ -309,7 +137,7 @@ function kyun(seconds){
 
 // Limit
 const limitend = (pushname2) => {
-        return`*maaf ${pushname2} limit hari ini habis*\n*limit di reset setiap jam 12:00 WIB TENGAH MALAM*`
+        return`*Desculpe ${pushname2} Seu limite acabou*\n*o limite é redefinido a cada 12:00*`
 }
 
 const limitcount = (limitCounts) => {
