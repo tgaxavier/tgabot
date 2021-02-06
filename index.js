@@ -60,7 +60,7 @@ memberLimit
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const { color, bgcolor } = require('./lib/color')
-const { help, bahasa, limitend, limitcount } = require('./Fxc7/help')
+const { help, limitend, limitcount } = require('./Fxc7/help')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
