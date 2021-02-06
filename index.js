@@ -63,20 +63,20 @@ const { color, bgcolor } = require('./lib/color')
 const { help, bahasa, donasi, limitend, limitcount } = require('./Fxc7/help')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 
-const vcard = 'BEGIN:VCARD\n'
-            + 'VERSION:3.0\n'
-            + 'FN:Farhan\n'
-            + 'ORG:Owner FXC7;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=628311800241:+62 831-1800-241\n'
+const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
+            + 'VERSION:3.0\n' 
+            + 'FN:Guilherme Xavier\n' // full name
+            + 'ORG:Owner Bot;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=0812345678:+55 (65) 9907-1373\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
 prefix = "!"
 name = "~ F X C 7 | B O T"
 rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN FXC7BOT😁"
-rmenu = "HAI TEMEN FXC7BOT👋 JANGAN LUPA DONASI YAA:)"
+rmenu = cr = '*BOT INI SUDAH TERVERIFIKASI*'
 limitt = 10
 ban = []
-userpremium = ["628311800241@s.whatsapp.net"] //ubah nomer kalian
+userpremium = ["556599071373@s.whatsapp.net"] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -180,26 +180,26 @@ async function starts() {
 			
 
 			mess = {
-				wait: '*⏳ ᴡᴀɪᴛ ꜱᴇᴅᴀɴɢ ᴅɪ ᴩʀᴏꜱᴇꜱ...*',
-				success: '*ꜱᴜᴋꜱᴇꜱ...*',
+				wait: '*「 𝘱𝘰𝘳𝘧𝘢𝘷𝘰𝘳 𝘢𝘨𝘶𝘢𝘳𝘥𝘦, 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘢𝘯𝘥𝘰...」*',
+				success: '*𝘴𝘶𝘤𝘦𝘴𝘴𝘰...*',
 				error: {
 					stick: ' *ɢᴀɢᴀʟ, ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴋᴏɴᴠᴇʀꜱɪ ɢᴀᴍʙᴀʀ ᴋᴇ ꜱᴛɪᴄᴋᴇʀ*',
-					Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!!*'
+					Iv: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘭𝘪𝘯𝘬 𝘪𝘯𝘷𝘢𝘭𝘪𝘥𝘰!!*'
 				},
 				only: {
-					group: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴅᴀʟᴀᴍ ɢʀᴏᴜᴩ!*',
-					benned: '*ᴍᴀᴀꜰ ɴᴏᴍᴇʀ ᴋᴀᴍᴜ ᴋᴇ ʙᴀɴɴᴇᴅ ꜱɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ᴀɢᴀʀ ᴍᴇᴍʙᴜᴋᴀ ʙᴀɴɴᴇᴅ ᴀɴᴅᴀ*',
-					ownerG: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ɢʀᴏᴜᴩ!*',
-					ownerB: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ʙᴏᴛ!* ',
-					premium: '*ᴍᴀᴀꜰ ꜰɪᴛᴜʀ ɪɴɪ ᴋʜᴜꜱᴜꜱ ᴜꜱᴇʀ ᴩʀᴇᴍɪᴜᴍ!!*',
-					userB: `Hai Kak ${pushname2} Kamu Belom Terdaftar Didatabase Silahkan Ketik ${prefix}daftar`,
-					admin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴏᴜᴩ!*',
-					Badmin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴋᴇᴛɪᴋᴀ ʙᴏᴛ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ!*'
+					group: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘦𝘮 𝘨𝘳𝘶𝘱𝘰𝘴!*',
+					benned: '*𝘥𝘦𝘴𝘤𝘶𝘭𝘱𝘦 𝘰 𝘴𝘦𝘶 𝘯𝘶𝘮𝘦𝘳𝘰 𝘧𝘰𝘪 𝘣𝘢𝘯𝘪𝘥𝘰, 𝘱𝘰𝘳 𝘧𝘢𝘷𝘰𝘳 𝘤𝘰𝘯𝘵𝘢𝘤𝘵𝘦 𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵*',
+					ownerG: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵!*',
+					ownerB: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵!* ',
+					premium: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘳𝘦𝘤𝘶𝘳𝘴𝘰 𝘦 𝘢𝘱𝘦??𝘢𝘴 𝘱𝘢𝘳𝘢 𝘮𝘦𝘮𝘣𝘳𝘰𝘴 𝘱𝘳𝘦𝘮𝘪𝘶𝘮!!*',
+					userB: `𝘚𝘢𝘭𝘷𝘦 *${pushname2}* 𝘷𝘰𝘤𝘦 ??𝘪𝘯𝘥𝘢 𝘯𝘢𝘰 𝘴𝘦 𝘳𝘦𝘨𝘪𝘴𝘵𝘳𝘰𝘶 *${name}* \n𝘳𝘦𝘨𝘪𝘴𝘵𝘳𝘦-𝘴𝘦 𝘱𝘳𝘪𝘮𝘦𝘪𝘳𝘰\n\n 𝘦𝘹𝘦𝘮𝘱𝘭𝘰 ${prefix}𝘥𝘢𝘧𝘵𝘢𝘳 ${pushname2}/01`,
+					admin: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘢𝘥𝘮𝘪𝘯𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘳 𝘥𝘰 𝘨𝘳𝘶𝘱𝘰!*',
+					Badmin: '*𝘥𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘲𝘶𝘢𝘯𝘥𝘰 𝘰 𝘣𝘰𝘵 𝘴𝘦 𝘵𝘰𝘳𝘯𝘢 𝘢𝘥𝘮𝘪𝘯𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘳!*'
 				}
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["628311800241@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["556599071373@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -333,7 +333,7 @@ async function starts() {
 					break
 		case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (isUser) return reply('kamu sudah Menjadi Temen FXC7BOT:D')
+					if (isUser) return reply('Voce ja esta registrado:D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -342,7 +342,7 @@ async function starts() {
 					} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					captionnya = `╭─「 *PENDAFTARAN USER* 」\`\`\`\n│ Pendaftaran berhasil dengan SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`Pada ${date} ${time}\`\`\`\n│\`\`\`[Nama]: ${pushname2}\`\`\`\n│\`\`\`[Nomor]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Untuk menggunakan bot\`\`\`\n│\`\`\`silahkan\`\`\`\n│\`\`\`kirim ${prefix}help/menu\`\`\`\n│\`\`\`\n│Total Pengguna: ${user.length} Orang\`\`\`\n╰─────────────────────────`
+					captionnya = `╭─「 *VERIFICADO* 」\`\`\`\n│ Verificado com sucesso SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`Data ${date} ${time}\`\`\`\n│\`\`\`[Nome]: ${pushname2}\`\`\`\n│\`\`\`[Zap]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar um bot\`\`\`\n│\`\`\`Pofavor\`\`\`\n│\`\`\`Digite ${prefix}help/menu\`\`\`\n│\`\`\`\n│Registrados: ${user.length} Total\`\`\`\n╰─────────────────────────`
 					daftarimg = await getBuffer(ppimg)
 					client.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break 
