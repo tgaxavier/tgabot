@@ -286,7 +286,6 @@ function kyun(seconds){
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
 , 
-}
 
 
 // Limit
