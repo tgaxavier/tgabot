@@ -54,13 +54,13 @@ const adminNumber = JSON.parse(fs.readFileSync('./database/json/admin.json'))
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const blocked = JSON.parse(fs.readFileSync('./database/json/blocked.json'))
 let {
-instagram, yt, groupLink, memberLimit
+memberLimit
 } = setting
 
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const { color, bgcolor } = require('./lib/color')
-const { help, bahasa, donasi, limitend, limitcount } = require('./Fxc7/help')
+const { help, bahasa, limitend, limitcount } = require('./Fxc7/help')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
@@ -73,7 +73,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
 prefix = "!"
 name = "~ F X C 7 | B O T"
 rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN FXC7BOT😁"
-rmenu = cr = '*BOT INI SUDAH TERVERIFIKASI*'
+rmenu = cr  '*BOT VERIFICADO*'
 limitt = 10
 ban = []
 userpremium = ["556599071373@s.whatsapp.net"] //ubah nomer kalian
@@ -191,7 +191,7 @@ async function starts() {
 					benned: '*𝘥𝘦𝘴𝘤𝘶𝘭𝘱𝘦 𝘰 𝘴𝘦𝘶 𝘯𝘶𝘮𝘦𝘳𝘰 𝘧𝘰𝘪 𝘣𝘢𝘯𝘪𝘥𝘰, 𝘱𝘰𝘳 𝘧𝘢𝘷𝘰𝘳 𝘤𝘰𝘯𝘵𝘢𝘤𝘵𝘦 𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵*',
 					ownerG: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵!*',
 					ownerB: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵!* ',
-					premium: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘳𝘦𝘤𝘶𝘳𝘴𝘰 𝘦 𝘢𝘱𝘦??𝘢𝘴 𝘱𝘢𝘳𝘢 𝘮𝘦𝘮𝘣𝘳𝘰𝘴 𝘱𝘳𝘦𝘮𝘪𝘶𝘮!!*',
+					premium: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘳𝘦𝘤𝘶𝘳𝘴𝘰 𝘦 𝘢𝘱𝘦𝘯𝘢𝘴 𝘱𝘢𝘳𝘢 𝘮𝘦𝘮𝘣𝘳𝘰𝘴 𝘱𝘳𝘦𝘮𝘪𝘶𝘮!!*',
 					userB: `𝘚𝘢𝘭𝘷𝘦 *${pushname2}* 𝘷𝘰𝘤𝘦 ??𝘪𝘯𝘥𝘢 𝘯𝘢𝘰 𝘴𝘦 𝘳𝘦𝘨𝘪𝘴𝘵𝘳𝘰𝘶 *${name}* \n𝘳𝘦𝘨𝘪𝘴𝘵𝘳𝘦-𝘴𝘦 𝘱𝘳𝘪𝘮𝘦𝘪𝘳𝘰\n\n 𝘦𝘹𝘦𝘮𝘱𝘭𝘰 ${prefix}𝘥𝘢𝘧𝘵𝘢𝘳 ${pushname2}/01`,
 					admin: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘢𝘥𝘮𝘪𝘯𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘳 𝘥𝘰 𝘨𝘳𝘶𝘱𝘰!*',
 					Badmin: '*𝘥𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘲𝘶𝘢𝘯𝘥𝘰 𝘰 𝘣𝘰𝘵 𝘴𝘦 𝘵𝘰𝘳𝘯𝘢 𝘢𝘥𝘮𝘪𝘯𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘳!*'
@@ -348,21 +348,21 @@ async function starts() {
 					break 
 			case 'help':
 			case 'menu':
-			if (isBanned) return reply(mess.only.benned)
+				if (isBanned) return reply(mess.only.benned)
 				if (!isUser) return reply(mess.only.userB)
 				uptime = process.uptime()
 				user.push(sender)
-				myMonths = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-                myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum at','Sabtu'];
+				myMonths = ["Janeiro "," Fevereiro "," Março "," Abril "," Maio "," Junho "," Julho "," Agosto "," Setembro "," Outubro "," Novembro "," Dezembro"];
+                myDays = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sabado'];
                 var tgl = new Date();
                 var day = tgl.getDate()
-                  bulan = tgl.getMonth()
+                   bulan = tgl.getMonth()
                 var thisDay = tgl.getDay(),
                 thisDay = myDays[thisDay];
                 var yy = tgl.getYear()
                 var year = (yy < 1000) ? yy + 1900 : yy;
                 const tanggal = `${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
-					await costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, FarhanGans, rmenu)
+					client.sendMessage(from, help(prefix, pushname2, limitt, uptime, jam, tanggal), text, {quoted: mek})
     				break
 
 				case 'bahasa':
