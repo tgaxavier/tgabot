@@ -72,8 +72,8 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
 
 prefix = "!"
 name = "~ F X C 7 | B O T"
-rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN FXC7BOT😁"
-cr = '*Verified*'
+rdaftar = "OBRIGADO POR SE REGISTRAR😁"
+rmenu = "BOT VERIFICADO)"
 limitt = 10
 ban = []
 userpremium = ["556599071373@s.whatsapp.net"] //ubah nomer kalian
