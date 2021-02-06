@@ -53,6 +53,8 @@ const bucinrandom = JSON.parse(fs.readFileSync('./database/json/bucin.json'))
 const adminNumber = JSON.parse(fs.readFileSync('./database/json/admin.json'))
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const blocked = JSON.parse(fs.readFileSync('./database/json/blocked.json'))
+let anlink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
+
 let {
 memberLimit
 } = setting
@@ -213,8 +215,9 @@ async function starts() {
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isAnime = isGroup ? anime.includes(from) : false
-			const isSimi = isGroup ? samih.includes(from) : false 
+			const isSimi = isGroup ? samih.includes(from) 
 			const isOwner = ownerNumber.includes(sender)
+			const antilink = isGroup ? anlink.includes(from) : false
 			const isUser = user.includes(sender)
 			const isBanned = ban.includes(sender)
 			const isPrem = userpremium.includes(sender)
@@ -300,8 +303,20 @@ async function starts() {
 			
 			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-			
+			if (antilink && isGroup && isBotGroupAdmins){
+            if (args.match(/(https:\/\/chat.whatsapp.com)/gi)) {
+                const check = await mek.inviteInfo(args);
+                if (!check) {
+                    return
+                } else {
+                    reply('*[DETECTOR DE LINK DE GRUPO!]*\nVoce enviou um link de bate-papo em grupo, desculpe, você começou o grupo em breve.').then(() => {
+                        client.groupRemove(from, groupId, args.id)
+                    })
+                }
+            }
+         }
 			switch(command) {
+				
 			case 'brainly':
 					if (!isUser) return reply(mess.only.userB)
 					if (isBanned) return reply(mess.only.benned)
@@ -363,7 +378,33 @@ async function starts() {
                 const tanggal = `${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
 					client.sendMessage(from, help(prefix, pushname2, limitt, uptime, jam, tanggal), text, {quoted: mek})
     				break
-
+               case 'antilink':
+					client.updatePresence(from, Presence.composing) 
+					if (!isUser) return reply(mess.only.userB)
+					if (isBanned) return reply(mess.only.benned)   
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply('selecione ligado ou desligado!!')
+					if (args[0] == 'on') {
+						if (antilink) {
+						return reply('O modo anti-link está ativo')
+						} else {
+						fs.writeFileSync('./database/json/antilink.json', JSON.stringify(antilink))
+						reply(`Ativar modo anti-link com sucesso`)
+					   }
+					} else if (args[0] == 'off') {
+						if(!antilink) {
+						reply('Anti-link desativado')
+						} else {
+						antilink.splice(sender, 1)
+						fs.writeFileSync('./database/json/antilink.json', JSON.stringify(antilink))
+						reply('O modo anti-link foi desativado com sucesso️')
+    					}
+					} else {
+						reply('selecione on ou off mano?')
+					}
+					
+					break 
 				case 'bahasa':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
