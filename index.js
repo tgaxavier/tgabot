@@ -238,35 +238,11 @@ async function starts() {
 				(id == null || id == undefined || id == false) ? client.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}})
 			}
 
-			colors = ['red','white','black','blue','yellow','green']
+			colors = ['red','white','black','blue','yellow','green', 'aqua']
 			const isMedia = (type === 'imageMessage' || type === 'videoMessage')
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
-			
-			if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
-			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
-			
-			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-			
-			if (antilink && isGroup && isBotGroupAdmins){
-            if (args.match(/(https:\/\/chat.whatsapp.com)/gi)) {
-                const check = await mek.inviteInfo(args);
-                if (!check) {
-                    return
-                } else {
-                    reply(from, '[GROUP LINK DETECTOR!]\n\nKamu mengirimkan link Grup chat lain tanpa izin Admin, Maaf kamu segera di kick dari grup.\n\nMYTH Bot', id).then(() => {
-                        mek.groupRemove(from, groupMembers)
-                    })
-                }
-            }
-        }
-     
-     if (Farhan == 'hai') {
-     mek.reply('too')
-     }
-			switch(command) 
 			
 			const checkLimit = (sender) => {
                 let found = false
@@ -321,6 +297,25 @@ async function starts() {
                 fs.writeFileSync('./database/json/limit.json', JSON.stringify(_limit))
             }
         }
+     
+     		if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
+			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
+			
+			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
+			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
+			if (antilink && isGroup && isBotGroupAdmins){
+            if (args.match(/(https:\/\/chat.whatsapp.com)/gi)) {
+                const check = await mek.inviteInfo(args);
+                if (!check) {
+                    return
+                } else {
+                    reply('*[DETECTOR DE LINK DE GRUPO!]*\nVoce enviou um link de bate-papo em grupo, desculpe, você começou o grupo em breve.').then(() => {
+                        client.groupRemove(from, groupId, args.id)
+                    })
+                }
+            }
+         }
+			switch(command) {
 				
 			case 'brainly':
 					if (!isUser) return reply(mess.only.userB)
@@ -2026,7 +2021,7 @@ async function starts() {
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					setTimeout( () => {
-					client.sendMessage(from, 'Eu avisei kk', text)
+					client.sendMessage(from, 'Eu avisei kkkk', text)
 					}, 18000)
 					setTimeout( () => {
 					reply('removido:D')
@@ -2080,7 +2075,7 @@ async function starts() {
 						if (err) return reply(mess.error.stick)
 						bufferhgf = fs.readFileSync(rano)
 						client.sendMessage(from, bufferhgf, sticker, {quoted: mek})
-						fs.unlinkSync(rano)
+						fs.unlinkSync(media)
 					})
 					break 
 				case 'delete':
