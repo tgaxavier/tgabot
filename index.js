@@ -2457,7 +2457,7 @@ async function starts() {
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if (!isUrl(args[0]) && !args[0].includes('www.facebook.com')) return reply(mess.error.Iv)
 					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbar.tech/api/epbe?url=${args[0]}&apiKey=${BarBarApi}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/dok/epbe?url=${args[0]}&apiKey=${BarBarApi}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					client.sendMessage(from, '[ AGUARDE ] PROCESSANDO...', text, {quoted: mek})
 					efbe = `Titulo: *${anu.title}*\nTamanho: *${anu.filesize}\nPiblicado: *${anu.published}*`
