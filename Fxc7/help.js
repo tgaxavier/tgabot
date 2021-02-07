@@ -1,120 +1,120 @@
 // menu fitur bot
-const help = (prefix, pushname2, limitt, jam, tanggal) => { 
+const help = (prefix, pushname2, uptime, limitt, jam, tanggal) => { 
 	return `
 	
 
-╭──────「 *MEMBRO* 」
+╭──────「 *MEMBRO* 」──────
 ┴
-┣⊱  \`\`\`NOME:\`\`\` *${pushname2}*
-┣⊱  \`\`\`VERIFICADO:\`\`\` ✅
-┣⊱  \`\`\`LIMITE:\`\`\` *${limitt} Por Dia*
-┣⊱  \`\`\`JAM:\`\`\` *${jam}*
-┣⊱  \`\`\`HORA:\`\`\` *${tanggal}*
+┣➣ NOME *${pushname2}*
+┣➣ VERIFICADO: ✅
+┣➣ LIMITE: *${limitt} Por Dia*
+┣➣ JAM: *${jam}*
+┣➣ HORA: *${tanggal}*
+┬
+╰───────────────────────
+
+
+╭──────「 *MENU* 」────────
+┴
+⟩➢ *${prefix}report msg pro admin*
+⟩➢ *${prefix}info*
+⟩➢ *${prefix}owner*
+⟩➢ *${prefix}speed*
+⟩➢ *${prefix}daftar*
+⟩➢ *${prefix}totaluser*
+⟩➢ *${prefix}grouplist*
+⟩➢ *${prefix}blocklist*
+⟩➢ *${prefix}banlist*
+⟩➢ *${prefix}premiumlist*
+⟩➢ *${prefix}bahasa*
 ┬
 ╰────────────────────────
 
 
-╭──────「 *MENU* 」
+╭──────「 *Xavier-Bot* 」────────
 ┴
-│➻ *${prefix}report msg pro admin*
-│➻ *${prefix}info*
-│➻ *${prefix}owner*
-│➻ *${prefix}speed*
-│➻ *${prefix}daftar*
-│➻ *${prefix}totaluser*
-│➻ *${prefix}grouplist*
-│➻ *${prefix}blocklist*
-│➻ *${prefix}banlist*
-│➻ *${prefix}premiumlist*
-│➻ *${prefix}bahasa*
-┬
-╰────────────────────────
-
-
-╭──────「 *Xavier-Bot* 」
-┴
-│➻ *${prefix}nulis*
-│➻ *${prefix}tahta*
-│➻ *${prefix}tts*
-│➻ *${prefix}ttp*
-│➻ *${prefix}sticker*
-│➻ *${prefix}toimg*
-│➻ *${prefix}img2url*
-│➻ *${prefix}tomp3*
-│➻ *${prefix}ocr*
+⟩➢ *${prefix}nulis*
+⟩➢ *${prefix}tahta*
+⟩➢ *${prefix}tts*
+⟩➢ *${prefix}ttp*
+⟩➢ *${prefix}sticker*
+⟩➢ *${prefix}toimg*
+⟩➢ *${prefix}img2url*
+⟩➢ *${prefix}tomp3*
+⟩➢ *${prefix}ocr*
 ┬
 ╰──────────────────────────
 
 
-╭───────「 *GRUPO_MENU* 」
+╭───────「 *GRUPO_MENU* 」─────
 ┴
-│➻ *${prefix}welcome On/Off*
-│➻ *${prefix}grup open/close*
-│➻ *${prefix}antilink on/off*
-│➻ *${prefix}ownergrup*
-│➻ *${prefix}cantada*
-│➻ *${prefix}setpp*
-│➻ *${prefix}infogc*
-│➻ *${prefix}add 628xxxxxxxxxx*
-│➻ *${prefix}kick @mentioned*
-│➻ *${prefix}kicktime @mentioned*
-│➻ *${prefix}promote @mentioned*
-│➻ *${prefix}demote @mentioned*
-│➻ *${prefix}setname*
-│➻ *${prefix}setdesc*
-│➻ *${prefix}linkgrup*
-│➻ *${prefix}tagme*
-│➻ *${prefix}hidetag*
-│➻ *${prefix}mentionall*
-│➻ *${prefix}fitnah*
-│➻ *${prefix}listadmin*
-│➻ *${prefix}simih On/Off*
+⟩➢ *${prefix}welcome On/Off*
+⟩➢ *${prefix}grup open/close*
+⟩➢ *${prefix}antilink on/off*
+⟩➢ *${prefix}ownergrup*
+⟩➢ *${prefix}cantada*
+⟩➢ *${prefix}setpp*
+⟩➢ *${prefix}infogc*
+⟩➢ *${prefix}add 628xxxxxxxxxx*
+⟩➢ *${prefix}kick @mentioned*
+⟩➢ *${prefix}kicktime @mentioned*
+⟩➢ *${prefix}promote @mentioned*
+⟩➢ *${prefix}demote @mentioned*
+⟩➢ *${prefix}setname*
+⟩➢ *${prefix}setdesc*
+⟩➢ *${prefix}linkgrup*
+⟩➢ *${prefix}tagme*
+⟩➢ *${prefix}hidetag*
+⟩➢ *${prefix}mentionall*
+⟩➢ *${prefix}fitnah*
+⟩➢ *${prefix}listadmin*
+⟩➢ *${prefix}simih On/Off*
 ┬
 ╰────────────────────────
 
 
-╭──────「 *MENU_APPS* 」
+╭──────「 *MENU_APPS* 」────
 ┴
-│➻ *${prefix}moddroid lightroom*
-│➻ *${prefix}happymod lightroom*
-│➻ *${prefix}playstore WhatsApp*
+⟩➢ *${prefix}moddroid lightroom*
+⟩➢ *${prefix}happymod lightroom*
+⟩➢ *${prefix}playstore WhatsApp*
 ┬
 ╰────────────────────────
 
 
 ╭─────────「 *OWNER ONLY* 」
 ┴
-│➻ *${prefix}addprem mentioned*
-│➻ *${prefix}removeprem mention*
-│➻ *${prefix}setmemlimit*
-│➻ *${prefix}setreply*
-│➻ *${prefix}setprefix*
-│➻ *${prefix}setnamebot*
-│➻ *${prefix}setppbot*
-│➻ *${prefix}bc*
-│➻ *${prefix}bcgc*
-│➻ *${prefix}ban*
-│➻ *${prefix}unban*
-│➻ *${prefix}block*
-│➻ *${prefix}unblock*
-│➻ *${prefix}clearall*
-│➻ *${prefix}delete*
-│➻ *${prefix}clone*
-│➻ *${prefix}getses*
-│➻ *${prefix}leave*
+⟩➢ *${prefix}addprem mentioned*
+⟩➢ *${prefix}removeprem mention*
+⟩➢ *${prefix}setmemlimit*
+⟩➢ *${prefix}setreply*
+⟩➢ *${prefix}setprefix*
+⟩➢ *${prefix}setnamebot*
+⟩➢ *${prefix}setppbot*
+⟩➢ *${prefix}bc*
+⟩➢ *${prefix}bcgc*
+⟩➢ *${prefix}ban*
+⟩➢ *${prefix}unban*
+⟩➢ *${prefix}block*
+⟩➢ *${prefix}unblock*
+⟩➢ *${prefix}clearall*
+⟩➢ *${prefix}delete*
+⟩➢ *${prefix}clone*
+⟩➢ *${prefix}getses*
+⟩➢ *${prefix}leave*
 ┬
 ╰────────────────────────
 
 
 ╭────────「 *MENU_PREMIUM* 」
 ┴
-│➻ *${prefix}playmp3*
-│➻ *${prefix}fb link video*
-│➻ *${prefix}snack link snack video*
-│➻ *${prefix}ytmp3 link*
-│➻ *${prefix}ytmp4 link*
-│➻ *${prefix}play*
-│➻ *${prefix}smule*
+⟩➢ *${prefix}playmp3*
+⟩➢ *${prefix}fb link video*
+⟩➢ *${prefix}snack link snack video*
+⟩➢ *${prefix}ytmp3 link*
+⟩➢ *${prefix}ytmp4 link*
+⟩➢ *${prefix}play*
+⟩➢ *${prefix}smule*
 ┬
 ╰────────────────────────
 
