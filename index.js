@@ -2067,7 +2067,7 @@ async function starts() {
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
 					teks = body.slice(6).trim()
-					atytyd = await getBuffer(`https://api.xteam.xyz/attp?file&text=${teks}`, {method: 'get'})
+					atytyd = await getBuffer(`https://api.xteam.xyz/attp?file&text=halo${teks}`, {method: 'get'})
 					if (atytyd.error) return reply(atytyd.error)
 					reply(mess.wait)
 					exec(`wget ${atytyd} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
