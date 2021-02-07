@@ -2021,7 +2021,7 @@ async function starts() {
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					setTimeout( () => {
-					client.sendMessage(from, 'Eu avisei kk, text)
+					client.sendMessage(from, 'Eu avisei kk', text)
 					}, 18000)
 					setTimeout( () => {
 					reply('removido:D')
