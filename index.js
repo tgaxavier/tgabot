@@ -2071,7 +2071,7 @@ async function starts() {
 					if (atytyd.error) return reply(atytyd.error)
 					reply(mess.wait)
 					exec(`wget ${atytyd} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(ranp)
+						fs.unlinkSync(cmd)
 						if (err) return reply(mess.error.stick)
 						bufferhgf = fs.readFileSync(rano)
 						client.sendMessage(from, bufferhgf, sticker, {quoted: mek})
