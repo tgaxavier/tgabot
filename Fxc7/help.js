@@ -1,15 +1,14 @@
 // menu fitur bot
-const help = (prefix, pushname2, uptime, limitt, jam, tanggal) => { 
+const help = (prefix, pushname2, limitt, jam, tanggal) => { 
 	return `
 	
-
 ╭──────「 *MEMBRO* 」──────
 ┴
 ┣➣ NOME *${pushname2}*
 ┣➣ VERIFICADO: ✅
 ┣➣ LIMITE: *${limitt} Por Dia*
-┣➣ JAM: *${jam}*
-┣➣ HORA: *${tanggal}*
+┣➣ HORA: *${jam}*
+┣➣ DATA: *${tanggal}*
 ┬
 ╰───────────────────────
 
@@ -31,7 +30,7 @@ const help = (prefix, pushname2, uptime, limitt, jam, tanggal) => {
 ╰────────────────────────
 
 
-╭──────「 *Xavier-Bot* 」────────
+╭───「 *Xavier-Bot* 」────────
 ┴
 ⟩➢ *${prefix}nulis*
 ⟩➢ *${prefix}tahta*
@@ -46,7 +45,7 @@ const help = (prefix, pushname2, uptime, limitt, jam, tanggal) => {
 ╰──────────────────────────
 
 
-╭───────「 *GRUPO_MENU* 」─────
+╭──「 *GRUPO_MENU* 」─────
 ┴
 ⟩➢ *${prefix}welcome On/Off*
 ⟩➢ *${prefix}grup open/close*
@@ -70,19 +69,19 @@ const help = (prefix, pushname2, uptime, limitt, jam, tanggal) => {
 ⟩➢ *${prefix}listadmin*
 ⟩➢ *${prefix}simih On/Off*
 ┬
-╰────────────────────────
+╰───────────────────
 
 
-╭──────「 *MENU_APPS* 」────
+╭──「 *MENU_APPS* 」────
 ┴
 ⟩➢ *${prefix}moddroid lightroom*
 ⟩➢ *${prefix}happymod lightroom*
 ⟩➢ *${prefix}playstore WhatsApp*
 ┬
-╰────────────────────────
+╰───────────────────
 
 
-╭─────────「 *OWNER ONLY* 」
+╭──「 *OWNER ONLY* 」────
 ┴
 ⟩➢ *${prefix}addprem mentioned*
 ⟩➢ *${prefix}removeprem mention*
@@ -103,10 +102,10 @@ const help = (prefix, pushname2, uptime, limitt, jam, tanggal) => {
 ⟩➢ *${prefix}getses*
 ⟩➢ *${prefix}leave*
 ┬
-╰────────────────────────
+╰───────────────────
 
 
-╭────────「 *MENU_PREMIUM* 」
+╭──「 *MENU_PREMIUM* 」───
 ┴
 ⟩➢ *${prefix}playmp3*
 ⟩➢ *${prefix}fb link video*
@@ -116,7 +115,7 @@ const help = (prefix, pushname2, uptime, limitt, jam, tanggal) => {
 ⟩➢ *${prefix}play*
 ⟩➢ *${prefix}smule*
 ┬
-╰────────────────────────
+╰─────────────────────
 
 `
 }
