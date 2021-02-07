@@ -2065,7 +2065,7 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('「INFO」Teks dibutuhkan')
 					ranp = getRandom('.gif')
-					rano = getRandom('.cmd')
+					rano = getRandom('.media')
 					teks = body.slice(6).trim()
 					atytyd = await getBuffer(`https://api.xteam.xyz/attp?file&text=halo${teks}`, {method: 'get'})
 					if (atytyd.error) return reply(atytyd.error)
