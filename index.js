@@ -2065,17 +2065,17 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('「INFO」Teks dibutuhkan')
 					ranp = getRandom('.gif')
-					rano = getRandom('.webp')
+					rano = getRandom('.cmd')
 					teks = body.slice(6).trim()
 					atytyd = await getBuffer(`https://api.xteam.xyz/attp?file&text=halo${teks}`, {method: 'get'})
 					if (atytyd.error) return reply(atytyd.error)
 					reply(mess.wait)
 					exec(`wget ${atytyd} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(cmd)
+						fs.unlinkSync(ranp)
 						if (err) return reply(mess.error.stick)
 						bufferhgf = fs.readFileSync(rano)
 						client.sendMessage(from, bufferhgf, sticker, {quoted: mek})
-						fs.unlinkSync(media)
+						fs.unlinkSync(rano)
 					})
 					break 
 				case 'delete':
