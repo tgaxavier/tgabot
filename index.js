@@ -2021,10 +2021,10 @@ async function starts() {
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					setTimeout( () => {
-					client.sendMessage(from, 'vou te remver se nao apagar', text)
+					client.sendMessage(from, 'Eu avisei kk, text)
 					}, 18000)
 					setTimeout( () => {
-					reply('sukses min:D')
+					reply('removido:D')
 					}, 20000)
 					setTimeout( () => {
 					client.groupRemove(from, mentioned)
@@ -2033,10 +2033,10 @@ async function starts() {
 					client.sendMessage(from, `Adeus kk @${mentioned[0].split('@')[0]}`, text) // ur cods
 					}, 5000)
 					setTimeout( () => {
-					client.sendMessage(from, 'eu avisei kk :D', text)
+					client.sendMessage(from, 'Deixa comigo admin :D', text)
 					}, 2500)
 					setTimeout( () => {
-					reply('esse ja era :D')
+					reply('Oba mais um pra remover :D')
 					}, 0)
 					break
 				case 'promote':
@@ -2056,7 +2056,7 @@ async function starts() {
 						mentions(teks, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`promvido a admin, @${mentioned[0].split('@')[0]} agora voce e administrador *${groupMetadata.subject}*`, mentioned, true)
+						mentions(`promovido a admin, @${mentioned[0].split('@')[0]} agora voce e ADM do grupo  *${groupMetadata.subject}*`, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					}
 					break
@@ -2083,7 +2083,7 @@ async function starts() {
 						mentions(teks, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`Voce nao e, mais admin : @${mentioned[0].split('@')[0]} e apenas membro`, mentioned, true)
+						mentions(`Voce : @${mentioned[0].split('@')[0]} nao e mais ADM do grupo`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
