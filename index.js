@@ -74,7 +74,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
 
 prefix = "!"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
-rmenu = "BOT VERIFICADO"
+cr = "BOT VERIFICADO"
 limitt = 10
 ban = []
 userpremium = ["556599071373@s.whatsapp.net"] //ubah nomer kalian
@@ -192,7 +192,7 @@ async function starts() {
 					benned: '*𝘥𝘦𝘴𝘤𝘶𝘭𝘱𝘦 𝘰 𝘴𝘦𝘶 𝘯𝘶𝘮𝘦𝘳𝘰 𝘧𝘰𝘪 𝘣𝘢𝘯𝘪𝘥𝘰, 𝘱𝘰𝘳 𝘧𝘢𝘷𝘰𝘳 𝘤𝘰𝘯𝘵𝘢𝘤𝘵𝘦 𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵*',
 					ownerG: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵!*',
 					ownerB: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘱𝘳𝘰𝘱𝘳𝘪𝘦𝘵𝘢𝘳𝘪𝘰 𝘥𝘰 𝘣𝘰𝘵!* ',
-					premium: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘳𝘦𝘤𝘶𝘳𝘴𝘰 𝘦 𝘢𝘱𝘦𝘯𝘢𝘴 𝘱𝘢𝘳𝘢 𝘮𝘦𝘮𝘣𝘳𝘰𝘴 𝘱𝘳𝘦𝘮𝘪𝘶𝘮!!*',
+					premium: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘳𝘦𝘤𝘶𝘳𝘴𝘰 𝘦 𝘢𝘱𝘦𝘯??𝘴 𝘱𝘢𝘳𝘢 𝘮𝘦𝘮𝘣𝘳𝘰𝘴 𝘱𝘳𝘦𝘮𝘪𝘶𝘮!!*',
 					userB: `𝘚𝘢𝘭𝘷𝘦 ${pushname2} 𝘗𝘢𝘳𝘢 𝘴𝘦 𝘳𝘦𝘨𝘪𝘴𝘵𝘳𝘢𝘳 𝘥𝘪𝘨𝘪𝘵𝘦 ${prefix}daftar`,
 					admin: '*𝘋𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘱𝘦𝘭𝘰 𝘢𝘥𝘮𝘪𝘯𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘳 𝘥𝘰 𝘨𝘳𝘶𝘱𝘰!*',
 					Badmin: '*𝘥𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘲𝘶𝘢𝘯𝘥𝘰 𝘰 𝘣𝘰𝘵 𝘴𝘦 𝘵𝘰𝘳𝘯𝘢 𝘢𝘥𝘮𝘪𝘯𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘳!*'
