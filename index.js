@@ -266,7 +266,7 @@ async function starts() {
      if (Farhan == 'hai') {
      mek.reply('too')
      }
-			switch(command) {
+			switch(command) 
 			
 			const checkLimit = (sender) => {
                 let found = false
