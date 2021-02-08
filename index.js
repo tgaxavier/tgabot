@@ -634,7 +634,7 @@ async function starts() {
 				case 'attp':
 					cry = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson(`https://api.xteam.xyz/attp?file&text=${halo}`, {method: 'get'})
+					anu = await fetchJson(`https://api.xteam.xyz/attp?file&text=halo=${TobzApi}`, {method: 'get'})
                    if (!isUser) return reply(mess.only.userB)
                    if (isLimit(sender)) return reply(limitend(pushname2))
                    if (isBanned) return reply(mess.only.benned)
