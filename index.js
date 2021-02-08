@@ -547,7 +547,7 @@ async function starts() {
 					cry = getRandom('.gif')
 					rano = getRandom('.webp')
 					teks = body.slice(6).trim()
-					atytyd = await getBuffer(`https://api.xteam.xyz/attp?file&text=${teks}`, {method: 'get'})
+					anu = await getBuffer(`https://api.xteam.xyz/attp?file&text=${teks}`, {method: 'get'})
 					if (!isUser) return reply(mess.only.userB)
                    if (isLimit(sender)) return reply(limitend(pushname2))
                    if (isBanned) return reply(mess.only.benned)
