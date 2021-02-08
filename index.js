@@ -542,24 +542,6 @@ async function starts() {
 					}
 					await limitAdd(sender) 
 					break 
-					case 'attp':
-					if (args.length < 1) return reply('「INFO」Teks dibutuhkan')
-					cry = getRandom('.gif')
-					rano = getRandom('.webp')
-					teks = body.slice(6).trim()
-					anu = await getBuffer(`https://api.xteam.xyz/attp?file&text=${teks}`, {method: 'get'})
-					if (!isUser) return reply(mess.only.userB)
-                   if (isLimit(sender)) return reply(limitend(pushname2))
-                   if (isBanned) return reply(mess.only.benned)
-                   if (!isGroup) return reply(mess.only.group)
-					reply (mess.wait)
-					exec(`wget ${anu.result} -O ${cry} && ffmpeg -i ${cry} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(cry)
-						buffer = fs.readFileSync(rano)
-						client.sendMessage(from, buffer, sticker, {quoted: mek})
-						fs.unlinkSync (rano)
-					})
-					break 
 				case 'img2url':
            if (!isUser) return reply(mess.only.userB)
 			if (isBanned) return reply(mess.only.benned)
@@ -649,10 +631,10 @@ async function starts() {
 					client.sendMessage(from, '10 Detik lagi', text, {quoted: mek}) // ur cods
 					}, 0) // 1000 = 1s,
 					break 
-				case 'animecry':
+				case 'attp':
 					cry = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry?apikey=${TobzApi}`, {method: 'get'})
+					anu = await fetchJson(`https://api.xteam.xyz/attp?file&text=${TobzApi}`, {method: 'get'})
                    if (!isUser) return reply(mess.only.userB)
                    if (isLimit(sender)) return reply(limitend(pushname2))
                    if (isBanned) return reply(mess.only.benned)
