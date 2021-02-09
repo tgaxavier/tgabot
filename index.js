@@ -196,7 +196,7 @@ async function starts() {
 			const ownerNumber = [
 			"556599071373@s.whatsapp.net"
 			]
-			premium = [
+			const premium = [
 			"556599071373@s.whatsapp.net"
 			]
 
@@ -210,17 +210,17 @@ async function starts() {
 			const groupDesc = isGroup ? groupMetadata.desc : ''
 			const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
 			const totalchat = await client.chats.all()
-			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false 
+			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isAnime = isGroup ? anime.includes(from) : false
-			const isSimi = isGroup ? samih.includes(from) : false
+			const isSimi = isGroup ? samih.includes(from) : false 
 			const isOwner = ownerNumber.includes(sender)
-			const antilink = isGroup ? anlink.includes(from) : false
+			const antilink = anlink.includes(sender)
 			const isUser = user.includes(sender)
 			const isBanned = ban.includes(sender)
-			const isPrem = userpremium.includes(sender)
+			const isPrem = premium.includes(sender)
 			
 			const isUrl = (url) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
