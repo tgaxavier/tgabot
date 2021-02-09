@@ -197,10 +197,10 @@ async function starts() {
 			
 			]
 			const ownerNumber = [
-			"447451207704@s.whatsapp.net"
+			"556599071373@s.whatsapp.net"
 			]
 			premium = [
-			"447451207704@s.whatsapp.net"
+			"556599071373@s.whatsapp.net"
 			]
 
 			const botNumber = client.user.jid
