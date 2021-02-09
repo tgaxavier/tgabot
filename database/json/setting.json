@@ -1,4 +1,8 @@
 {
-    "memberLimit": 5,
+    "prefix": ".",
+    "instagram": "https://www.instagram.com/ayyiin",
+    "name": "【 MYTH BOT 】",
+    "replySet": "【 MYTH BOT 】BOT SUDAH TERVERIFIKASI ✨",
+    "memberLimit": 5000,
     "groupLimit": 5
   }
