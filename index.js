@@ -835,7 +835,6 @@ async function starts() {
                 break
 				case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
