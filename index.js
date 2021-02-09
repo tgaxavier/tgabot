@@ -72,12 +72,6 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'TEL;type=CELL;type=VOICE;waid=0812345678:+55 (65) 9907-1373\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
-prefix = "!"
-rdaftar = "OBRIGADO POR SE REGISTRAR😁"
-cr = "BOT VERIFICADO"
-limitt = 10
-ban = []
-userpremium = ["556599071373@s.whatsapp.net"] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -198,9 +192,18 @@ async function starts() {
 					Badmin: '*𝘥𝘦𝘴𝘤𝘶𝘭𝘱𝘦, 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘴𝘰 𝘱𝘰𝘥𝘦 𝘴𝘦𝘳 𝘶𝘴𝘢𝘥𝘰 𝘲𝘶𝘢𝘯𝘥𝘰 𝘰 𝘣𝘰𝘵 𝘴𝘦 𝘵𝘰𝘳𝘯𝘢 𝘢𝘥𝘮𝘪𝘯𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘳!*'
 				}
 			}
+			
+			ban = [
+			
+			]
+			const ownerNumber = [
+			"447451207704@s.whatsapp.net"
+			]
+			premium = [
+			"447451207704@s.whatsapp.net"
+			]
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["556599071373@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
