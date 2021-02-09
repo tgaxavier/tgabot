@@ -55,9 +55,6 @@ const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const blocked = JSON.parse(fs.readFileSync('./database/json/blocked.json'))
 let anlink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
 
-let {
-memberLimit
-} = setting
 
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
